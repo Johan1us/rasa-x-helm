@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 
-version: "4.5.4"
+version: "0.0.1"
 
 appVersion: "1.0.1"
 
@@ -10,17 +10,6 @@ description: Rasa Enterprise Helm chart for Kubernetes / Openshift
 home: https://github.com/RasaHQ/rasa-x-helm
 
 icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqZPsa-h0ilYPCFaQmf21MFMyVH7oyvrfnJHwvGOJVlMIeTiakBJTSwGd2cDFcF5AsEiY&usqp=CAU"
-
-keywords:
-- "Rasa"
-- "AI Assistants"
-- "Chatbot"
-- "Rasa Enterprise"
-
-maintainers:
-- name: "tmbo"
-  email: "tom@rasa.com"
-  url: "https://rasa.com"
 
 dependencies:
 - name: postgresql

@@ -34,7 +34,7 @@ rasax:
     # username specifies a name of this user
     username: "admin"
     # password for this user (leave it empty to skip the user creation)
-    password: ""
+    password: "rasa"
   ## Enable persistence using Persistent Volume Claims
   ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
   ##
@@ -143,7 +143,7 @@ rasa:
   # name of the Rasa image to use
   name: "rasa/rasa"
   # tag refers to the Rasa image tag. If empty `.Values.rasa.version-full` is used.
-  tag: ""
+  tag: "3.1.2-full"
   # port on which Rasa runs
   port: 5005
   # scheme by which Rasa services are accessible
@@ -224,7 +224,7 @@ rasa:
 
       # enable the rasa-production deployment
       # You can disable the rasa-production deployment in order to use external Rasa OSS deployment instead.
-      enabled: false
+      enabled: true
 
       # Define if external Rasa OSS should be used.
       external:
@@ -464,9 +464,9 @@ app:
   # override the default arguments to run in the container
   args: []
   # name of the custom action server image to use
-  name: "rasa/rasa-x-demo"
+  name: "johan1us/stuc-concurrent-app"
   # tag refers to the custom action server image tag
-  tag: "0.38.0"
+  tag: "1"
   # replicaCount of the custom action server container
   replicaCount: 1
   # port on which the custom action server runs
