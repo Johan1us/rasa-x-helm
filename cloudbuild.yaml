@@ -28,7 +28,7 @@
 
 steps:
 - name: 'bash'
-  args: ['echo', 'I am running a bash command']
+  args: ['echo', 'I am running a bash command', './scripts/repo-create.sh']
 - name: ubuntu
   script: echo hello
 - name: python
