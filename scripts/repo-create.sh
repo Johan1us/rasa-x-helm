@@ -1,6 +1,14 @@
 #!/bin/sh
 # to activate: $bash script.sh
 
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+export HELM_EXPERIMENTAL_OCI=1
+gcloud auth print-access-token | helm registry login -u oauth2accesstoken \
+--password-stdin https://europe-west4-docker.pkg.dev
+
 echo "What is the name of the repo for this deployment?"
 #read repo
 repo="stuc-concurrent"
@@ -20,8 +28,5 @@ pushd ..
 
 helm package rasa-x
 
-export HELM_EXPERIMENTAL_OCI=1
-gcloud auth print-access-token | helm registry login -u oauth2accesstoken \
---password-stdin https://europe-west4-docker.pkg.dev
 
 helm push rasa-x-0.0.1.tgz oci://europe-west4-docker.pkg.dev/bot-studio-tech/stuc-concurrent-repo
