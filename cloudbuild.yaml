@@ -28,7 +28,11 @@
 
 steps:
 - name: 'bash'
-  args: ['echo', 'I am running a bash command', './scripts/repo-create.sh']
+  args: ['echo', 'I am running a bash command']
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args: ['./scripts/repo-create.sh']
+
 - name: ubuntu
   script: echo hello
 - name: python
