@@ -6,7 +6,7 @@ echo "What is the name of the repo for this deployment?"
 repo="stuc-concurrent"
 echo "$repo"
 
-gcloud artifacts repositories create "$repo"-repo \
+gcloud artifacts repositories create "$repo"-repo-2 \
 --repository-format=docker \
 --location=europe-west4
 
