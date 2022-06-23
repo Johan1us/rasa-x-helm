@@ -60,9 +60,9 @@ echo ""
 
 helm install \
 --namespace "$namespace" \
---values values.yml \
-"$namespace" \
-oci://europe-west4-docker.pkg.dev/bot-studio-tech/stuc-concurrent-repo/rasa-x
+--values values.yaml \
+test-release \
+oci://europe-west4-docker.pkg.dev/bot-studio-tech/bot-studio-tech-repo/rasa-x
 
 #popd
 
