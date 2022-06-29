@@ -754,6 +754,8 @@ rabbitmq:
     password: "password"
     # existingPasswordSecret which should be used for the password instead of putting it in the values file
     existingPasswordSecret: ""
+    #
+    erlangCookie: "cookie-monster"
   # service specifies settings for exposing rabbit to other services
   service:
     # port on which rabbitmq is exposed to Rasa
