@@ -8,3 +8,5 @@ Creating a Rasa Enterprise user: go to the terminal of the `rasa-x` pod and then
 
 Check out the Rasa Enterprise docs here for more help:
 https://rasa.com/docs/rasa-enterprise/
+
+Verder... Lekker bezig!!!
