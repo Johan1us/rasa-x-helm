@@ -16,6 +16,7 @@ metadata:
   {{- with .Values.ingress.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
+    kubernetes.io/ingress.global-static-ip-name: helloweb-ip
   {{- end }}
 spec:
 {{- if .Values.ingress.ingressClassName }}
