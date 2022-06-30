@@ -26,4 +26,4 @@ echo "Package HELM Chart"
 helm package rasa-x
 
 echo "Push HELM Chart"
-helm push rasa-x-0.0.3tgz oci://europe-west4-docker.pkg.dev/bot-studio-tech/bot-studio-tech-repo
+helm push rasa-x-0.0.5tgz oci://europe-west4-docker.pkg.dev/bot-studio-tech/bot-studio-tech-repo
