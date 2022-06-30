@@ -15,7 +15,6 @@ metadata:
     {{- include "rasa-x.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: helloweb-ip
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
