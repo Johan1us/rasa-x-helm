@@ -16,7 +16,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: helloweb
+  name: {{ .Release.Name }}-helloweb
   annotations:
     kubernetes.io/ingress.global-static-ip-name: helloweb-ip
   labels:
@@ -31,7 +31,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: helloweb-backend-nodeport
+  name: {{ .Release.Name }}-helloweb-backend-nodeport
   labels:
     app: hello
 spec:
