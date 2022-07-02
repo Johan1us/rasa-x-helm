@@ -35,7 +35,7 @@ metadata:
   labels:
     app: hello
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: hello
     tier: web
