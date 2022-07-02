@@ -16,7 +16,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloweb
+  name: {{ .Release.Name }}-helloweb
   labels:
     app: hello
 spec:
