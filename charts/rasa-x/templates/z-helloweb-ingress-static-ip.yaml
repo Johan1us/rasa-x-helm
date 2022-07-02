@@ -31,7 +31,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: helloweb-backend-NodePort
+  name: helloweb-backend-nodeport
   labels:
     app: hello
 spec:
