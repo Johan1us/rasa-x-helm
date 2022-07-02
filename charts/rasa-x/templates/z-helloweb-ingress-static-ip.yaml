@@ -31,11 +31,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: helloweb-backend
+  name: helloweb-backend-NodePort
   labels:
     app: hello
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: hello
     tier: web
