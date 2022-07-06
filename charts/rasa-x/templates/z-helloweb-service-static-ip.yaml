@@ -1,3 +1,4 @@
+
 # Copyright 2021 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,5 +27,5 @@ spec:
   - port: 80
     targetPort: 8080
   type: LoadBalancer
-  loadBalancerIP: "34.147.64.115"
+  loadBalancerIP: "34.110.210.42"
 ---
