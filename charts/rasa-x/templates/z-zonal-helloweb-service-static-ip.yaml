@@ -25,7 +25,7 @@ spec:
     tier: web
   ports:
   - port: 80
-    targetPort: 8080
+    targetPort: 8081
   type: LoadBalancer
   loadBalancerIP: "34.147.64.115"
 ---
