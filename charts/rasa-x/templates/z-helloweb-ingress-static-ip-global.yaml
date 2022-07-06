@@ -16,7 +16,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ .Release.Name }}-helloweb
+  name: {{ .Release.Name }}-helloweb-global
   annotations:
     kubernetes.io/ingress.global-static-ip-name: bot-studio-tech-ip
   labels:
@@ -24,14 +24,14 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: helloweb-backend
+      name: helloweb-backend-global
       port:
         number: 8080
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Release.Name }}-helloweb-backend
+  name: {{ .Release.Name }}-helloweb-backend-global
   labels:
     app: hello
 spec:

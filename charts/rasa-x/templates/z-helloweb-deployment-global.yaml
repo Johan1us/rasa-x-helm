@@ -16,7 +16,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-helloweb
+  name: {{ .Release.Name }}-helloweb-global
   labels:
     app: hello
 spec:
@@ -32,7 +32,7 @@ spec:
         tier: web
     spec:
       containers:
-      - name: hello-app
+      - name: hello-app-global
         image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
         ports:
         - containerPort: 8080
