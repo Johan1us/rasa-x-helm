@@ -18,7 +18,7 @@ kind: Ingress
 metadata:
   name: helloweb
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: bot-studio-tech-ip-2
+    kubernetes.io/ingress.global-static-ip-name: global-ip
   labels:
     app: hello
 spec:
