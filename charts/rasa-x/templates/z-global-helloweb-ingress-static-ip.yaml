@@ -16,11 +16,11 @@
 {{/*apiVersion: networking.k8s.io/v1*/}}
 {{/*kind: Ingress*/}}
 {{/*metadata:*/}}
-{{/*  name: {{ .Release.Name }}-helloweb-global*/}}
+{{/*  name: helloweb-global*/}}
 {{/*  annotations:*/}}
 {{/*    kubernetes.io/ingress.global-static-ip-name: bot-studio-tech-ip*/}}
 {{/*  labels:*/}}
-{{/*    app: hello*/}}
+{{/*    app: hello-global*/}}
 {{/*spec:*/}}
 {{/*  defaultBackend:*/}}
 {{/*    service:*/}}
@@ -31,15 +31,14 @@
 {{/*apiVersion: v1*/}}
 {{/*kind: Service*/}}
 {{/*metadata:*/}}
-{{/*  name: {{ .Release.Name }}-helloweb-backend-global*/}}
+{{/*  name: helloweb-backend-global*/}}
 {{/*  labels:*/}}
-{{/*    app: hello*/}}
+{{/*    app: hello-global*/}}
 {{/*spec:*/}}
 {{/*  type: NodePort*/}}
 {{/*  selector:*/}}
-{{/*    app: hello*/}}
+{{/*    app: hello-global*/}}
 {{/*    tier: web*/}}
-{{/*    region: global*/}}
 {{/*  ports:*/}}
 {{/*  - port: 8081*/}}
 {{/*    targetPort: 8081*/}}

@@ -16,21 +16,19 @@
 {{/*apiVersion: apps/v1*/}}
 {{/*kind: Deployment*/}}
 {{/*metadata:*/}}
-{{/*  name: {{ .Release.Name }}-helloweb-global*/}}
+{{/*  name: helloweb-global*/}}
 {{/*  labels:*/}}
-{{/*    app: hello*/}}
+{{/*    app: hello-global*/}}
 {{/*spec:*/}}
 {{/*  selector:*/}}
 {{/*    matchLabels:*/}}
-{{/*      app: hello*/}}
+{{/*      app: hello-global*/}}
 {{/*      tier: web*/}}
-{{/*      region: global*/}}
 {{/*  template:*/}}
 {{/*    metadata:*/}}
 {{/*      labels:*/}}
-{{/*        app: hello*/}}
+{{/*        app: hello-global*/}}
 {{/*        tier: web*/}}
-{{/*        region: global*/}}
 {{/*    spec:*/}}
 {{/*      containers:*/}}
 {{/*      - name: hello-app-global*/}}

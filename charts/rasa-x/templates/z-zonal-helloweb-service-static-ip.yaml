@@ -18,10 +18,10 @@ kind: Service
 metadata:
   name: helloweb-zonal
   labels:
-    app: hello
+    app: hello-zonal
 spec:
   selector:
-    app: hello
+    app: hello-zonal
     tier: web
   ports:
   - port: 80
