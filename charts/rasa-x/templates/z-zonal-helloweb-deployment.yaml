@@ -18,23 +18,23 @@ kind: Deployment
 metadata:
   name: helloweb-zonal
   labels:
-    app: hello
+    app: hello-zonal
 spec:
   selector:
     matchLabels:
       app: hello-zonal
-      tier: web
+      tier: web-zonal
   template:
     metadata:
       labels:
         app: hello-zonal
-        tier: web
+        tier: web-zonal
     spec:
       containers:
       - name: hello-app
         image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
         resources:
           requests:
             cpu: 200m
