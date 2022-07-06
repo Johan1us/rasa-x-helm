@@ -68,7 +68,7 @@
 {{/*        env:*/}}
 {{/*        - name: "PORT"*/}}
 {{/*          value: "50000"*/}}
----
+{{/*---*/}}
 {{/*apiVersion: v1*/}}
 {{/*kind: Service*/}}
 {{/*metadata:*/}}
@@ -82,7 +82,7 @@
 {{/*  - protocol: TCP*/}}
 {{/*    port: 80*/}}
 {{/*    targetPort: 8080*/}}
----
+{{/*---*/}}
 {{/*apiVersion: apps/v1*/}}
 {{/*kind: Deployment*/}}
 {{/*metadata:*/}}
