@@ -28,6 +28,6 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: {{ include "rasa-x.fullname" . }}-nginx
+            name: my-release-rasa-x-nginx
             port:
               number: 8000
