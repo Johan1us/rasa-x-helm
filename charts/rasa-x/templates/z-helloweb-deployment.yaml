@@ -30,6 +30,7 @@ spec:
       labels:
         app: hello
         tier: web
+        region: zonal
     spec:
       containers:
       - name: hello-app-zonal

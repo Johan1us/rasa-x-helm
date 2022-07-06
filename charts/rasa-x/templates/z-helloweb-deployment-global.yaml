@@ -30,12 +30,13 @@ spec:
       labels:
         app: hello
         tier: web
+        region: global
     spec:
       containers:
       - name: hello-app-global
         image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
         resources:
           requests:
             cpu: 200m
