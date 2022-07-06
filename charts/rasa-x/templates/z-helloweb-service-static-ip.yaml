@@ -16,17 +16,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: helloweb-zonal
+  name: helloweb
   labels:
     app: hello
 spec:
   selector:
     app: hello
     tier: web
-    region: zonal
   ports:
   - port: 80
     targetPort: 8080
   type: LoadBalancer
-  loadBalancerIP: "34.110.210.42"
+  loadBalancerIP: "34.147.64.115"
 ---

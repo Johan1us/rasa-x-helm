@@ -16,7 +16,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-helloweb-zonal
+  name: helloweb
   labels:
     app: hello
 spec:
@@ -24,16 +24,14 @@ spec:
     matchLabels:
       app: hello
       tier: web
-      region: zonal
   template:
     metadata:
       labels:
         app: hello
         tier: web
-        region: zonal
     spec:
       containers:
-      - name: hello-app-zonal
+      - name: hello-app
         image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
         ports:
         - containerPort: 8080
