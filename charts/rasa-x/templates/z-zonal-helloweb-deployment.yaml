@@ -18,16 +18,16 @@ kind: Deployment
 metadata:
   name: helloweb
   labels:
-    app: hello
+    app: hello-zonal
 spec:
   selector:
     matchLabels:
-      app: hello
+      app: hello-zonal
       tier: web
   template:
     metadata:
       labels:
-        app: hello
+        app: hello-zonal
         tier: web
     spec:
       containers:
