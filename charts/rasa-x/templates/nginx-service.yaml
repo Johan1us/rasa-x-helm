@@ -24,6 +24,7 @@ spec:
     {{- end }}
   type: {{ .Values.nginx.service.type }}
     {{- if .Values.nginx.service.loadBalancerSourceRanges }}
+  loadBalancerIP: "34.147.64.115"
   loadBalancerSourceRanges: {{ .Values.nginx.service.loadBalancerSourceRanges | toYaml | nindent 2 }}
     {{- end }}
   selector:
