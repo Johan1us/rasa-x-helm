@@ -577,6 +577,8 @@ nginx:
     nodePort: ""
     # externalIPs can be used to expose the service to certain IPs (https://kubernetes.io/docs/concepts/services-networking/service/#external-ips)
     externalIPs: []
+    # loadBalancerIP can be used  to expose the service to a dedicated (regional) IP
+    loadBalancerIP: ""
   livenessProbe:
     enabled: true
     # command for the `livenessProbe`
