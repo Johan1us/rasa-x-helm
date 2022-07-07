@@ -3,4 +3,8 @@ steps:
   entrypoint: 'bash'
   args: ['./helm-chart-ci.sh']
 
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args: ['./helm-upgrade-cd.sh']
+
 
