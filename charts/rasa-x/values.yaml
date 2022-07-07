@@ -840,10 +840,10 @@ ingress:
     nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
   # hosts for this ingress
-  hosts:
-    - host: rasa-x.example.com
-      paths:
-      - /
+#  hosts:
+#    - host: rasa-x.example.com
+#      paths:
+#      - /
   # tls: Secrets for the certificates
   tls: []
   #  - secretName: rasa-x-tls
