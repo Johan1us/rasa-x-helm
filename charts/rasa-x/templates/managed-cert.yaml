@@ -30,6 +30,6 @@ metadata:
 spec:
   defaultBackend:
     service:
-      name: {{ include "rasa-x.fullname" . }}-rasa-x
+      name: {{ include "rasa-x.fullname" . }}-nginx
       port:
         number: 8000
