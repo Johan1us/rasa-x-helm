@@ -23,6 +23,7 @@ spec:
   externalIPs: {{ .Values.nginx.service.externalIPs | toYaml | nindent 2 }}
     {{- end }}
   type: {{ .Values.nginx.service.type }}
+  loadBalancerIP: "34.147.64.115"
     {{- if .Values.nginx.service.loadBalancerSourceRanges }}
   loadBalancerSourceRanges: {{ .Values.nginx.service.loadBalancerSourceRanges | toYaml | nindent 2 }}
     {{- end }}
